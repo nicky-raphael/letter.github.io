@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HAWOO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">:O</a>
+        <ul>
+            <li><a href="#">Nicky Raphael</a></li>
+        </ul>
+    </header>
+    <section class="one" id="one">
+        <img src="BM.png" id="behind_mountain">
+        <h2 id="teks">HAWOO CICI :></h2>
+        <a href="#sec" id="btn">Scroll</a>
+        <img src="FM.png" id="front_mountain">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Dear, Cici Piyena</h2>
+        <p>Cicii.. Maaci ya untuk dukungan penuh aku terpilih jadi ketua Jurnalistik, ehe :>. Meski aku ga berharap
+            terpilih namun aku pun paham begitu besar keinginan mu agar aku bisa menjadi ketua, seneng aku bisa denger
+            suara dukungan dari orang yang paling aku cintai. Akhirnya ya terwujud juga keinginan mu biar aku terpilih,
+            yaa... jika itu yang kamu mau dan bikin kamu senang aku pun ikut senang :D . Aku akan berusaha untuk agar ekskul
+            yang ku pimpin bisa berjalan dengan baik dan semakin berkembang kedepannya ;) 
+            <br></br>
+            O iyaa.. aku juga mau terima kasih untuk kamu cici, kamu selalu menemani aku setiap saat dan mempertahankan 
+            hubungan kita hingga detik ini meski banyak rintangan yang kita lalui, Aku minta maaf ya suka bikin kamu sebel, 
+            dan itu kesalahan yang pure tidak kusengaja, ku harap bisa dimengerti untuk itu dan kedepannya nanti ;) 
+            <br></br> 
+            Cemangat selalu ya cici.. GANBATTE!! I'm always by your side, ku akan selalu support kamu dan berusaha memberikan 
+            yang terbaik buat kamu selalu.
+            <br><br>
+            <br><br>
+            WUFF U MORE! ❤❤❤
+            <br></br>
+            Nicky, あなたのボーイフレンド
+        </p>
+    </div>
+
+    <script>
+        let behind_mountain = document.getElementById('behind_mountain');
+        let teks = document.getElementById('teks');
+        let btn = document.getElementById('btn');
+        let front_mountain = document.getElementById('front_mountain');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value= window.scrollY;
+            behind_mountain.style.top = value * 0.5 + 'px';
+            front_mountain.style.top = value * 0 + 'px';
+            teks.style.marginRight = value * 4 + 'px';
+            teks.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+    <section class="two" id="two">
+    <div class="wufi">
+        <img src="IMG-20230102-WA0043.jpg" id="foto">
+    </div>
+    <div class="hart">
+        <div class="heart"></div> 
+    </div>
+</section>
+</body>
+</html>
